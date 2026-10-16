@@ -1,0 +1,28 @@
+/* Notifikasi toast */
+
+.alert {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  color: #ffffff;
+  z-index: 10000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.3s ease;
+}
+
+.alert.success { background-color: #28a745; }
+
+.alert.error   { background-color: #dc3545; }
+
+.alert-title {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.alert-message {
+  font-size: 14px;
+  margin-top: 2px;
+}

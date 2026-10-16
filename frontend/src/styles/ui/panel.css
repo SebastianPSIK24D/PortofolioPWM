@@ -1,0 +1,25 @@
+/* Kepala panel dashboard */
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.panel-title { font-size: 20px; }
+
+.panel-subtitle { color: var(--text-secondary); font-size: 14px; margin-top: 4px; }
+
+.panel-title::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 1.05em;
+  margin-right: 10px;
+  border-radius: 3px;
+  vertical-align: -0.15em;
+  background: linear-gradient(180deg, var(--accent-primary), var(--accent-secondary));
+}

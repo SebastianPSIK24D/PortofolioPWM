@@ -1,0 +1,15 @@
+/* Tampilan data kosong */
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: var(--bg-secondary);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+}
+
+.empty-icon { font-size: 40px; margin-bottom: 8px; }
+
+.empty-state h4 { margin-bottom: 4px; }
+
+.empty-state p { color: var(--text-secondary); font-size: 14px; margin-bottom: 16px; }

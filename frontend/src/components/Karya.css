@@ -1,0 +1,46 @@
+/* Panel Karya (upload gambar) */
+
+.uploader { margin: 6px 0 16px; }
+
+.uploader-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 170px;
+  padding: 16px;
+  text-align: center;
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.uploader-box strong { color: var(--text-primary); }
+
+.uploader-box small { font-size: 12px; margin-top: 4px; }
+
+.uploader-box:hover,
+.uploader-box.drag {
+  border-color: var(--accent-primary);
+  background-color: var(--bg-primary);
+}
+
+.uploader-box.has-img {
+  padding: 0;
+  border-style: solid;
+  cursor: default;
+}
+
+.uploader-box img {
+  display: block;
+  width: 100%;
+  max-height: 230px;
+  object-fit: cover;
+}
+
+.uploader-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }

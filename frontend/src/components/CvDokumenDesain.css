@@ -1,0 +1,8 @@
+/* CV template Desain */
+
+.cvd-contact-ikon li { display: flex; align-items: flex-start; gap: 10px; }
+
+.cvd-contact-ikon li .ikon,
+.cvd-contact-ikon li .ikon-mono { margin-top: 2px; }
+
+.cvd-contact-ikon li span:last-child { min-width: 0; overflow-wrap: anywhere; }

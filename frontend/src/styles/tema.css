@@ -1,0 +1,65 @@
+/* Variabel warna tema terang dan gelap */
+
+:root {
+  color-scheme: light;
+  --bg-primary: #f4f6fb;
+  --bg-secondary: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #5b6678;
+  --accent-primary: #2563eb;
+  --accent-secondary: #0d9488;
+  --border: #e2e6ef;
+  --border-strong: #cdd5e3;
+  --shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 8px 24px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 14px 34px rgba(15, 23, 42, 0.16);
+  --nav-bg {
+    background: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  --hero-from: #2563eb;
+  --hero-to: #0e7490;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --band-alt: #eaf0fa;
+  --band-tint: linear-gradient(180deg, #e6efff 0%, #f4f6fb 100%);
+  --dot: rgba(15, 23, 42, 0.09);
+  --flow-1: #f4f6fb;
+  --flow-2: #e8f0ff;
+  --flow-3: #d9e6ff;
+  --flow-4: #c8d9fa;
+  --flow-glow-a: rgba(37, 99, 235, 0.12);
+  --flow-glow-b: rgba(13, 148, 136, 0.11);
+  --warn: #b45309;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-primary: #0e1118;
+  --bg-secondary: #171b26;
+  --text-primary: #e7eaf0;
+  --text-secondary: #9aa4b5;
+  --accent-primary: #3b82f6;
+  --accent-secondary: #2dd4bf;
+  --border: #262c3a;
+  --border-strong: #374054;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.6);
+  --nav-bg {
+    background: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  --hero-from: #1e3a8a;
+  --hero-to: #0f766e;
+  --band-alt: #121722;
+  --band-tint: linear-gradient(180deg, #14213d 0%, #0e1118 100%);
+  --dot: rgba(255, 255, 255, 0.07);
+  --flow-1: #0e1118;
+  --flow-2: #111a2e;
+  --flow-3: #132244;
+  --flow-4: #16294f;
+  --flow-glow-a: rgba(59, 130, 246, 0.16);
+  --flow-glow-b: rgba(45, 212, 191, 0.10);
+  --warn: #fbbf24;
+}

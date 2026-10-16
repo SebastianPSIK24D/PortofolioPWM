@@ -1,0 +1,25 @@
+
+# Dependencies React/Vite
+node_modules/
+
+# Hasil build
+dist/
+
+# Environment dan rahasia
+.env
+.env.*
+!.env.example
+
+# Log dan cache
+*.log
+npm-debug.log*
+.vite/
+
+# File editor dan sistem
+.vscode/
+.DS_Store
+Thumbs.db
+
+# File backup
+*.bak
+*.old

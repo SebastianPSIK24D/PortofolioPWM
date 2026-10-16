@@ -1,0 +1,67 @@
+/* CV template ATS */
+
+.cv-doc {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.cv-name { font-size: 26px; font-weight: 700; margin: 0 0 4px; }
+
+.cv-contact { margin: 0 0 6px; }
+
+.cv-doc h2 {
+  margin: 20px 0 8px;
+  padding-bottom: 3px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #000000;
+  break-after: avoid;
+}
+
+.cv-doc p { margin: 0 0 3px; overflow-wrap: anywhere; }
+
+.cv-item { margin-bottom: 10px; break-inside: avoid; }
+
+.cv-title { font-weight: 700; }
+
+.cv-meta { color: #333333; }
+
+@media print {
+  .cv-doc { font-size: 11pt; }
+  .cv-name { font-size: 20pt; }
+}
+
+@media (max-width: 560px) {
+  .cv-name { font-size: 22px; }
+}
+
+.cv-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cv-head-text { flex: 1; min-width: 0; }
+
+.cv-doc .cv-target { font-size: 15px; font-weight: 700; margin: 0 0 4px; }
+
+.cv-photo {
+  width: 96px;
+  height: 120px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border: 1px solid #000000;
+}
+
+.cv-doc ul { list-style: disc; margin: 3px 0 6px; padding-left: 20px; }
+
+.cv-doc li { margin: 0 0 2px; overflow-wrap: anywhere; }
+
+@media print {
+  .cv-photo { width: 3cm; height: 3.8cm; }
+}

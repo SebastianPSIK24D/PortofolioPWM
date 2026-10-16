@@ -1,0 +1,41 @@
+/* Kartu keahlian (dipakai dashboard dan halaman publik) */
+
+.skill-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-head h4 { font-size: 16px; }
+
+.level-badge {
+  padding: 3px 11px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #ffffff;
+  background-color: var(--lvl);
+}
+
+.skill-bar {
+  height: 8px;
+  margin-top: 14px;
+  border-radius: 999px;
+  overflow: hidden;
+  background-color: var(--border);
+}
+
+.skill-bar span {
+  display: block;
+  height: 100%;
+  width: var(--pct);
+  border-radius: 999px;
+  background-color: var(--lvl);
+  animation: growBar 0.8s ease;
+}
+
+.skill-name { display: flex; align-items: center; gap: 10px; min-width: 0; }
+
+.skill-name h4 { overflow-wrap: anywhere; }

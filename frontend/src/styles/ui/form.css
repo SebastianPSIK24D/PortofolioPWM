@@ -1,0 +1,95 @@
+/* Kolom isian dan formulir */
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="url"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 9px 12px;
+  margin: 6px 0 14px 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 1px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 14px;
+}
+
+.field.full { grid-column: 1 / -1; }
+
+.field-hint { font-size: 12px; color: var(--text-secondary); margin-top: 8px; }
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: -6px 0 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.check input { width: auto; margin: 0; }
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+@media (max-width: 560px) {
+  .form-grid { grid-template-columns: 1fr; }
+}
+
+select { cursor: pointer; }
+
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.char-count {
+  margin-top: -8px;
+  margin-bottom: 14px;
+  text-align: right;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="url"],
+input[type="tel"],
+select,
+textarea {
+  border-color: var(--border-strong);
+}
+
+input::placeholder,
+textarea::placeholder { color: var(--text-secondary); opacity: 0.7; }
